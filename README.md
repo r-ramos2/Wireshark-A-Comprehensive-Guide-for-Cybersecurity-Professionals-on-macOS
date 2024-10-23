@@ -1,29 +1,26 @@
 # **Wireshark: A Comprehensive Guide for Cybersecurity Professionals on macOS**
 
-## **Introduction**
+## **Table of Contents**
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [How to Use Wireshark](#how-to-use-wireshark)
+4. [Advanced Features](#advanced-features)
+5. [TLS Handshake Analysis](#tls-handshake-analysis)
+6. [Decrypting TLS Traffic](#decrypting-tls-traffic)
+7. [Capturing Wireless Traffic Using Monitor Mode](#capturing-wireless-traffic-using-monitor-mode)
+8. [Tracking IP Locations with GeoLite2](#tracking-ip-locations-with-geolite2)
+9. [Python Automation Project: Network Tracking with Wireshark & Google Maps](#python-automation-project-network-tracking-with-wireshark-and-google-maps)
+10. [Conclusion](#conclusion)
+11. [References](#references)
 
+---
+
+## **Introduction**
 In today’s cybersecurity landscape, the ability to analyze network traffic is crucial. **Wireshark** is a premier network protocol analyzer that enables professionals to capture and inspect data packets in real-time. This guide provides a step-by-step approach for using Wireshark effectively on macOS, covering everything from installation to advanced features.
 
 ---
 
-## **Table of Contents**
-
-- [Installation](#installation)
-- [How to Use Wireshark](#how-to-use-wireshark)
-- [Advanced Features](#advanced-features)
-- [TLS Handshake Analysis](#tls-handshake-analysis)
-- [Decrypting TLS Traffic](#decrypting-tls-traffic)
-- [Capturing Wireless Traffic Using Monitor Mode](#capturing-wireless-traffic-using-monitor-mode)
-- [Tracking IP Locations with GeoLite2](#tracking-ip-locations-with-geolite2)
-- [Python Automation Project: Network Tracking with Wireshark & Google Maps](#python-automation-project-network-tracking-with-wireshark-and-google-maps)
-- [Conclusion](#conclusion)
-- [References](#references)
-- [Contributing](#contributing)
-
----
-
 ## **Installation**
-
 1. **Visit the Wireshark Website**  
    Go to the official Wireshark website: [Wireshark Download](https://www.wireshark.org/download.html).
 
@@ -36,7 +33,6 @@ In today’s cybersecurity landscape, the ability to analyze network traffic is 
 ---
 
 ## **How to Use Wireshark**
-
 1. **Open Wireshark**  
    Launch Wireshark from your Applications folder.
 
@@ -66,9 +62,7 @@ In today’s cybersecurity landscape, the ability to analyze network traffic is 
 ---
 
 ## **Advanced Features**
-
 ### **Capture and Protocol Filters**
-
 1. **Set Capture Filters**  
    To limit captured traffic, apply filters before starting the capture:
    ```plaintext
@@ -84,11 +78,9 @@ In today’s cybersecurity landscape, the ability to analyze network traffic is 
 ---
 
 ## **TLS Handshake Analysis**
-
 Understanding the TLS handshake is critical for analyzing encrypted communications between clients and servers.
 
 ### **Steps:**
-
 1. **Start the Capture**  
    Begin capturing network traffic while accessing a secure website.
 
@@ -119,9 +111,7 @@ Understanding the TLS handshake is critical for analyzing encrypted communicatio
 ---
 
 ## **Decrypting TLS Traffic**
-
 ### **Decrypting HTTPS Traffic with Wireshark (Using Pre-Master Secret Keys)**
-
 1. **Set SSLKEYLOGFILE Environment Variable**  
    Open Terminal and run:
    ```bash
@@ -140,9 +130,7 @@ Understanding the TLS handshake is critical for analyzing encrypted communicatio
 ---
 
 ## **Capturing Wireless Traffic Using Monitor Mode**
-
 ### **Steps for macOS**:
-
 1. **Open Terminal**  
    Launch the Terminal application.
 
@@ -173,7 +161,6 @@ Understanding the TLS handshake is critical for analyzing encrypted communicatio
 ---
 
 ## **Tracking IP Locations with GeoLite2**
-
 1. **Download GeoLite2 Databases**  
    Visit [MaxMind's website](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data) to download the **GeoLite2 ASN** and **GeoLite2 City** databases.
 
@@ -186,12 +173,10 @@ Understanding the TLS handshake is critical for analyzing encrypted communicatio
 ---
 
 ## **Python Automation Project: Network Tracking with Wireshark & Google Maps**
-
 ### **Project Overview**  
 This project automates network packet capture and visualizes the geographic locations of IP addresses using Wireshark and Python. The script parses packet data and plots IP addresses on Google Maps.
 
 ### **Steps**:
-
 1. **Capture Network Traffic**  
    Use Wireshark to capture traffic and export the packet capture file (`.pcap`).
 
@@ -204,19 +189,11 @@ This project automates network packet capture and visualizes the geographic loca
 ---
 
 ## **Conclusion**
-
 This guide provides a comprehensive overview of using Wireshark on macOS for network analysis in cybersecurity. Mastering Wireshark equips professionals with essential skills for monitoring network traffic, analyzing security events, and understanding encryption.
 
 ---
 
 ## **References**
-
 - [Wireshark Official Documentation](https://www.wireshark.org/docs/)
 - [MaxMind GeoLite2 Databases](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data)
 - [Network Tracking using Wireshark and Google Maps](https://github.com/devincapriola/Network-Tracking-using-Wireshark-and-Google-Maps)
-
----
-
-## **Contributing**
-
-Contributions are welcome! If you have suggestions for improvements or find any errors, please open an issue or submit a pull request.
